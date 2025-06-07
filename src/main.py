@@ -25,7 +25,7 @@ def main():
 
     p1.status("Cadena ingresada: " + cadena)
     time.sleep(1)
-    # p1.status("Contando vocales...")
+    
     # time.sleep(1)
     
     contador = contar_vocales(cadena)
