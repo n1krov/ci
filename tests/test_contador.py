@@ -37,7 +37,7 @@ def test_vocales_acentuadas():
 
 def test_vocales_acentuadas_mixtas():
     """Prueba con una cadena que contiene vocales acentuadas y normales."""
-    assert contar_vocales("aáeéiíoóúu") == 8
+    assert contar_vocales("aáeéiíoóúu") == 10
 
 def test_vocales_acentuadas_mayusculas():
     """Prueba con una cadena que contiene vocales acentuadas en mayúsculas."""
