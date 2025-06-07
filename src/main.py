@@ -1,5 +1,5 @@
 
-from pwn import *
+from pwn import log
 import sys
 import time
 import signal
