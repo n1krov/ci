@@ -13,6 +13,10 @@
 ![Tests](https://img.shields.io/badge/tests-passed-brightgreen)
 ![Tests](https://img.shields.io/badge/tests-100%25-brightgreen)
 
+
+<imagen del proyecto>
+
+
 ---
 
 Este proyecto es un ejemplo simple para demostrar la integración y entrega continua (CI/CD) usando **GitHub Actions**, **Python** y **pytest** para un taller académico.
@@ -49,8 +53,6 @@ pip install -r requirements.txt
 pytest -vv
 ```
 
----
-
 ## CI/CD
 
 * Al hacer `push` o `pull request` a la rama `master`, se ejecuta el workflow que:
@@ -59,14 +61,10 @@ pytest -vv
   2. Corre los tests automatizados.
   3. (opcional) Construye y prueba una imagen Docker.
 
----
 
-## TODO
+## Licencia
 
-* [ ] Mover `test_contador.py` a `tests/`
-* [ ] Crear archivo `pytest.ini` para mejorar imports
-* [ ] Agregar Dockerfile y workflow de despliegue
-* [ ] Incluir documentación detallada en `/docs`
+Este proyecto está bajo la licencia MIT. Podés verla en el archivo [LICENSE](LICENSE).
 
 ---
 
