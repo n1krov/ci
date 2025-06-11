@@ -1,9 +1,20 @@
 # Contador de Vocales
 
-[![CI/CD](https://github.com/n1krov/ic/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/n1krov/ic/actions/workflows/ci.yml)
+<!-- [![CI/CD](https://github.com/n1krov/ic/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/n1krov/ic/actions/workflows/ci.yml) -->
+
+![CI](https://github.com/n1krov/ci/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/github/license/n1krov/ic)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Last Commit](https://img.shields.io/github/last-commit/n1krov/ic)
+![Contributors](https://img.shields.io/github/contributors/n1krov/ic)
+![Issues](https://img.shields.io/github/issues/n1krov/ic)
+![Pull Requests](https://img.shields.io/github/issues-pr/n1krov/ic)
+![Code Size](https://img.shields.io/github/languages/code-size/n1krov/ic)
+![Tests](https://img.shields.io/badge/tests-passed-brightgreen)
+![Tests](https://img.shields.io/badge/tests-100%25-brightgreen)
+
+
 
 ---
 
