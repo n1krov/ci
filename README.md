@@ -1,6 +1,5 @@
 # Contador de Vocales
 
-<!-- [![CI/CD](https://github.com/n1krov/ic/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/n1krov/ic/actions/workflows/ci.yml) -->
 
 ![CI](https://github.com/n1krov/ci/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
@@ -13,8 +12,6 @@
 ![Code Size](https://img.shields.io/github/languages/code-size/n1krov/ic)
 ![Tests](https://img.shields.io/badge/tests-passed-brightgreen)
 ![Tests](https://img.shields.io/badge/tests-100%25-brightgreen)
-
-
 
 ---
 
