@@ -49,7 +49,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "✅ GitHub Actions - Build EXITOSO en ${{ github.repository }}"
-          to: azulcobalto22@gmail.com
+          to: lautarorobales31@gmail.com
           from: ${{ secrets.MAIL_USERNAME }}
           body: |
             Hola,
@@ -71,7 +71,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "❌ GitHub Actions - Build FALLIDO en ${{ github.repository }}"
-          to: azulcobalto22@gmail.com
+          to: lautarorobales31@gmail.com
           from: ${{ secrets.MAIL_USERNAME }}
           body: |
             Hola,
