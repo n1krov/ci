@@ -3,3 +3,4 @@ pwn
 pyinstaller
 pwntools
 
+pyelftools

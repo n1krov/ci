@@ -1,3 +1,15 @@
+import pwnlib.atexception
+import pwnlib.data
+import pwnlib.shellcraft
+import pwnlib.shellcraft.templates
+# import pwnlib.shellcraft.common
+import pwnlib.elf
+import pwnlib.asm
+
+
+# importamos pwnlib.shellcraft.amd64 para usar las funciones de ensamblador
+
+
 
 from pwn import log
 import sys
@@ -5,6 +17,7 @@ import time
 import signal
 import os
 from contador import contar_vocales
+
 
 def ctrl_c(sig, frame):
     print(f'\n[!] Interrupcion, saliendo...')
