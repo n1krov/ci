@@ -38,3 +38,48 @@ jobs:
         with:
           name: binario-contador-vocales
           path: dist/main
+
+
+      - name: Enviar email si el build PASA
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "✅ GitHub Actions - Build EXITOSO en ${{ github.repository }}"
+          to: lautarorobales31@gmail.com
+          from: ${{ secrets.MAIL_USERNAME }}
+          body: |
+            Hola,
+
+            El workflow de GitHub Actions para el repositorio ${{ github.repository }} terminó exitosamente.
+
+            Puedes ver los detalles aquí: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Saludos,
+            Tu CI
+          secure: true
+
+      - name: Enviar email si el build FALLA
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "❌ GitHub Actions - Build FALLIDO en ${{ github.repository }}"
+          to: lautarorobales31@gmail.com
+          from: ${{ secrets.MAIL_USERNAME }}
+          body: |
+            Hola,
+
+            El workflow de GitHub Actions para el repositorio ${{ github.repository }} falló.
+
+            Revisa los logs aquí: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Saludos,
+            Tu CI
+          secure: true

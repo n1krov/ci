@@ -12,8 +12,7 @@
 ![Tests](https://img.shields.io/badge/tests-passed-brightgreen)
 ![Tests](https://img.shields.io/badge/tests-100%25-brightgreen)
 
-<imagen del proyecto>
-
+![[esquema.png]]
 
 ---
 
