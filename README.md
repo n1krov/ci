@@ -51,6 +51,18 @@ pip install -r requirements.txt
 pytest -vv
 ```
 
+
+# Entorno de Entrega: Docker + VPS
+
+Este entorno utiliza Docker para empaquetar la aplicación y un VPS para desplegarla en producción.
+
+## Flujo de Entrega
+
+1. El servidor CI genera la imagen Docker.
+2. Se sube la imagen al VPS.
+3. El VPS ejecuta la app en un contenedor.
+
+
 ## CI/CD
 
 * Al hacer `push` o `pull request` a la rama `master`, se ejecuta el workflow que:

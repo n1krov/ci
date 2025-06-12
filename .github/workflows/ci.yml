@@ -29,4 +29,12 @@ jobs:
         run: pytest --maxfail=1 --disable-warnings -v
         # --maxfail=1 detiene la ejecución al primer fallo y --disable-warnings suprime las advertencias
 
+      - name: Construir binario con pyinstaller
+        run: |
+          pyinstaller --onefile main.py
 
+      - name: Subir binario como artefacto
+        uses: actions/upload-artifact@v3
+        with:
+          name: binario-contador-vocales
+          path: dist/main
