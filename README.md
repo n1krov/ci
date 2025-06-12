@@ -12,8 +12,9 @@
 ![Tests](https://img.shields.io/badge/tests-passed-brightgreen)
 ![Tests](https://img.shields.io/badge/tests-100%25-brightgreen)
 
-<imagen del proyecto>
+### Esquema del proyecto
 
+![Esquema del proyecto](https://github.com/n1krov/ci/blob/dev/docs/esquema.png?raw=true)
 
 ---
 
@@ -50,6 +51,18 @@ pip install -r requirements.txt
 ```bash
 pytest -vv
 ```
+
+
+# Entorno de Entrega: Docker + VPS
+
+Este entorno utiliza Docker para empaquetar la aplicación y un VPS para desplegarla en producción.
+
+## Flujo de Entrega
+
+1. El servidor CI genera la imagen Docker.
+2. Se sube la imagen al VPS.
+3. El VPS ejecuta la app en un contenedor.
+
 
 ## CI/CD
 
