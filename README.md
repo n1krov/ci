@@ -12,7 +12,7 @@
 ![Tests](https://img.shields.io/badge/tests-passed-brightgreen)
 ![Tests](https://img.shields.io/badge/tests-100%25-brightgreen)
 
-![[esquema.png]]
+https://github.com/n1krov/ci/blob/dev/docs/esquema.png
 
 ---
 
