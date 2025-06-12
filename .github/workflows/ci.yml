@@ -31,7 +31,10 @@ jobs:
 
       - name: Construir binario con pyinstaller
         run: |
-          pyinstaller --onefile main.py
+          # pyinstaller --onefile main.py
+          # PYNTEMPLATES es una variable que captura la ruta exacta de templates dentro del entorno Python.
+          PYNTEMPLATES=$(python -c "import pwnlib.shellcraft; import os; print(os.path.join(os.path.dirname(pwnlib.shellcraft.__file__), 'templates'))")
+          pyinstaller --onefile main.py --add-data "$PYNTEMPLATES:pwnlib/shellcraft/templates"
 
       - name: Subir binario como artefacto
         uses: actions/upload-artifact@v4
